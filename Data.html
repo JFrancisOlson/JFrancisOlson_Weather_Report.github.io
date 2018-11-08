@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <meta charset="UTF-8">
+<!-- Links -->  
+  <link rel="stylesheet" href="navbar.css">
+<!--html tab Title-->
+  <title>Data Review and Discussion</title>
+<head>
+<!-- Navbar -->
+<div class="top">
+  <div class="bar theme top left-align large">
+    <a target="_blank" href="index.html">Lattitude</a>
+    <div class="dropdown" >
+    <button class="dropbtn">Plots</button>
+      <div class="dropdown-content">
+      <a target="_blank" href="Temperature.html">Temperature</a>
+      <a target="_blank" href="Humidity.html">Humidity</a>
+      <a target="_blank" href="WindSpeed.html">Wind Speed</a>
+      <a target="_blank" href="Cumulus.html">Cumulus</a>
+      </div>
+    </div>
+    <a target="_blank" href="Comparisons.html">Comparisons</a>
+    <a target="_blank" href="Data.html">Data</a>
+  </div>
+</div>
+</head>
+<body>
+  <section>
+    <h1>Data Frame Header</h1>
+    <article>
+    <img src="assets/images/data_frame_header.png" alt="Cloudy Map">
+    
+    <p><em>Raw Data Sample</em></p>
+    <p>  API methods were used to capture data for this analysis from Openweathermap.org.  The results were evaluated by temperature, humidity, cloudiness, and windspeed charted against latitudes.  The data was collected from 606 cities worldwide on 10/9/2018 using Citipy to randomly generate the sample of cities based on latitude and longitude for this data set.  A list compression loop was used to collect the data with a 1 second per loop throttle to prevent oversampling issues with the vendor.  The data was parsed using json methods and cast into lists and then assembled into a dataframe (see figure 1). Plots were constructed from the dataframe sample to analyze results.  Observations based on this series of scatter plots to showcase the following relationships. Units are imperial in this dataset (Fahrenheit, humidity %, windspeed in mph ,% cloudiness).
+<p>
+    </article>
+   
+   
+  </section>
+</body>
+</html>
