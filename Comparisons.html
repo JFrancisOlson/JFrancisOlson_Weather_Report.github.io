@@ -6,6 +6,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    <link rel="stylesheet" href="jfo_style.css">
+  <link rel="stylesheet" href="charts.css">
 
 <head>
 <!-- Navbar -->
@@ -47,76 +48,47 @@
 </head>
 <body class="container-fluid" >
 
+  <div  class="plotpad text-center col-md-12 posy" float="right">
+    
+        <div id="imageContainer col-md-12 float "class=" box-set  text-center floatformat"> 
 
-  <!--<section>
-    <h1>Comparison: Latitude vs. X</h1>
-    <article>
-    <a target="_blank" href="assets/images/cloudymap.png">
-      <img src="assets/images/cloudymap.png" alt="Cloudy Map">
-    </a>
-    <p><em>Cloudy Map</em></p>
-    </article>
-    <hr>
-    <article>
-    <a target="_blank" href="assets/images/humiditymap.png">
-    <img src="assets/images/humiditymap.png" alt="Humidity Map">
-    </a>
-    <p><em>Humidity Map</em></p>
-    </article>
-    <hr>
-    <article>
-      <a href="assets/images/temperaturemap.png">
-      <img target="_blank" src="assets/images/temperaturemap.png" alt="Tempurature Map">
-      </a>
-      <p><em>Temperature Map</em></p>
-    </article>
-    <hr>
- an example using figure/ficaption 
-
-    <figure>
-      <a target="_blank" href="assets/images/windmap.png">
-      <img src="assets/images/windmap.png" alt="Wind Map">
-      </a>
-      <figcaption><em>Wind Map</em></figcaption>
-    </figure>
-  </section>-->
-
-        <div class="plotpad text-center col-md-4 posy" float="right">
-        <div class="row col-md-12 ">
-            <div class=" text-center floatformat bg-1"> 
-            <h3 class='row aqua  '><strong>Visualizations</strong></h2>
-                <div class="row plotpad">
-                    <div class="col-sm-6 plotpad">
-                        <p class="row earthpad">Temperature</p>
-                        <img src="assets/images/temperaturemap.png" class="img-responsive posy right " style="width:%" alt="Temperature">
-                    </div>
-                    <div class="col-sm-6 ">
-                        <p class="row earthpad">Humidity</p>
-                        <img src="assets/images/humiditymap.png" class="img-responsive posy" style="width:100%" alt="Humidity">
-                    </div>
-                    <div class="col-sm-6 "> 
-                        <p class="row earthpad">Wind Speed</p>
-                        <img src="assets/images/windmap.png" class="img-responsive posy right " style="width:100%" alt="Wind Speed">
-                    </div>
-                    <div class="col-sm-6 "> 
-                        <p class="row earthpad"> Cloudiness</p>
-                        <img src="assets/images/cloudymap.png" class="img-responsive posy" style="width:100%" alt="Cloudiness">
-                    </div>
-                    <div class="col-sm-12">
-                    </div>
-                    <p> </p>
-                    <p><em> * data from over 600 cities                                            <em><p>
-                </div>
+          <h3 class='row aqua box-5'><strong>Visualizations</strong></h2>
+            <div class="row plotpad">
+                <figure class="col-sm-6 box-1 plotpad row"> 
+                 <a class="col-sm-10 row">Temperature</a>
+                    <img src="assets/images/temperaturemap.png" class="img-responsive  " style="width:80%" alt="Temperature">
+                </figure>
+                <figure class="col-sm-6 box-2 plotpad row">
+                    <a class="col-sm-10 row ">Humidity</a>
+                    <img src="assets/images/humiditymap.png" class="img-responsive " style="width:80%" alt="Humidity">
+                </figure>
+                <figure class="col-sm-6 box-3 plotpad row"> 
+                    <a class="col-sm-10 row ">Wind Speed</a>
+                    <img src="assets/images/windmap.png" class="img-responsive " style="width:80%" alt="Wind Speed">
+                </figure>
+                <figure class="col-sm-6 box-4 plotpad row"> 
+                    <a class="col-sm-10 row" position:"center"> Cloudiness</a>
+                    <img src="assets/images/cloudymap.png" class="img-responsive " style="width:80%" alt="Cloudiness">
+                </figure> 
+               
             </div>
-        </div>    
+         
     </div>
     
-</div>
+  </div>
+
+<!--  <div class="box-set col-md-6">
+    <figure class="box box-1 col-md-12 ">Box 1</figure>
+    <figure class="box box-2">Box 2</figure>
+    <figure class="box box-3">Box 3</figure>
+    <figure class="box box-4">Box 4</figure>
+  </div>
+-->
+
 
 <footer class=" footer text-center col-md-12 bg-5">
    <div><span>  
         <p></p>
-        
         <p class="bg-1p">Contact J Francis Olson: Data Analyst and Visualizer, MBA, CPPPM, CPPP-Agile <a target="_blank" href="https://www.linkedin.com/in/jeff-olson-a9bb391/">Linked In</a></p> 
         <p><em> </p> 
         <a href="contact.html">Need someone for your next project?</a>
@@ -126,6 +98,5 @@
         </a>
     </span></div>
 </footer>
-
 </body>
 </html>
