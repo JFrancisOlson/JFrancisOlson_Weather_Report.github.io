@@ -1,0 +1,105 @@
+.navbar {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: 0;
+        border-radius: 0;
+        margin-bottom: 0;
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    .navbar-nav li a:hover {
+        color: #1abc9c !important;
+    }
+
+    .aqua
+    {
+        color: #1abc9c;
+           
+    }
+    .aqua2
+    {
+        background-color: #1abc9c ; /* Aqua */
+        color: #FFFFFF;    /* White */
+           
+    }
+    .bg-1 { 
+       background-color: #cdcdcd; /* Grey */
+        color: #black;
+    
+    .bg-2 { 
+      background-color: #474e5d; /* Dark Blue */
+      color: #white;
+    }
+    .bg-3 { 
+      background-color: #ffffff; /* White */
+      color: #black;
+    }
+    
+    .bg-4 { 
+       background-color: #cdcdcd; /* Grey */
+        color: #black;
+    }
+    .bg-5 { 
+       background-color: #ffffff; /* White */
+        color: #black;
+    }
+
+    .bg-6 { 
+    background-color: #2f2f2f;
+    color: #ffffff;
+    }
+
+    .container-fluid {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .earthpad {position: relative;
+        padding: 50px;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }   
+    
+    .posy {position: relative;}
+    
+    .plotpad {
+        position: relative;
+        padding: 30px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .left {position:relative
+        float: left;
+        margin-right: 2em;
+    }
+
+    .right {position:relative
+        float: right;
+        margin-left: 2em;
+    }
+
+    .floatplotr {position:relative
+        float: 0;
+        margin-left: 1em;
+    }
+    .space { 
+        padding: 50px;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+
+    @media <!--all and--> (max-width: 650px) {
+        article {
+        width: 30%;
+        }
+    }
+
+    @media <!--all and--> (max-width: 450px) {
+        article {
+        width: 20%;
+        }
+    } 
+

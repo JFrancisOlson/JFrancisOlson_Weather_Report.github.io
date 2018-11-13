@@ -1,40 +1,125 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="navbar.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+   <link rel="stylesheet" href="jfo_style.css">
   <title>Trend Review: Latitude vs Humidity</title>
 <head>
-<!-- Navbar -->
-<div class="top">
-  <div class="bar theme top left-align large">
-    <a target="_blank" href="index.html">Lattitude</a>
-    <div class="dropdown" >
-    <button class="dropbtn">Plots</button>
-      <div class="dropdown-content">
-      <a target="_blank" href="Temperature.html">Temperature</a>
-      <a target="_blank" href="Humidity.html">Humidity</a>
-      <a target="_blank" href="WindSpeed.html">Wind Speed</a>
-      <a target="_blank" href="Cumulus.html">Cumulus</a>
-      </div>
+<!--Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"></a>
     </div>
-    <a target="_blank" href="Comparisons.html">Comparisons</a>
-    <a target="_blank" href="Data.html">Data</a>
-  </div>
-</div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Lattitude <span class="sr-only">(current)</span></a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="Temperature.html">temperature</a></li>
+            <li><a href="#">humidity</a><span class="sr-only">(current)</span></li>
+            <li><a href="WindSpeed.html">wind speed</a></li>
+            <li><a href="Cumulus.html">cumulus</a></li>
+          </ul>
+        </li>
+        <li><a href="Comparisons.html">comparisons</a></li>
+        <li><a href="Data.html">data</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
 </head>
-<body>
-  <section>
+
+<body class="container-fluid" >
+
+ <div class="row text-left col-md-8 ">
+        <div class="bg-1">
+            <h3 class='row aqua'><img src="http://bestanimations.com/Earth&amp;Space/Earth/earth-spinning-rotating-animation-18.gif" class="img-circle plotpad mg-responsive"  alt="Weather Analytics by Lattitude" width="55" height="55"> <strong> Chart 2) Latitude vs. Humidity:</strong></h3>
+    
+            <figure float="left"><img src="assets/images/Humiditymap.png" class="img-responsive col-md-5 bg-1 plotpad"  alt="Earth Lattitudes" height="500" width="500" >
+            <figcaption><em> </em></figcaption>
+    
+            <p class="bg-1"><strong>Discussion</strong>Analysis of the humidity leves by longitude is shown in Chart 2) Humidity vs Latitude seems to be different at the equator than the poles. The distribution of speeds near the equator shows lower dispersion but the distribution increases as you move away from the equator.  Similarly, for windspeed, the closer you are to the equator the lower the humidity.  Certainly, there are more arid regions near the equator worldwide.
+            </p>
+            <p><em> Humidity Map</em></p>
+            </figure>
+        </div>
+  </div>
+
+      <div class="plotpad text-center col-md-4 posy" float="right">
+        <div class="row col-md-12 ">
+            <div class=" text-center floatformat bg-1"> 
+            <h3 class='row aqua  '><strong>Visualizations</strong></h2>
+                <div class="row plotpad">
+                    <div class="col-sm-6 plotpad">
+                        <p class="row earthpad">Temperature</p>
+                        <img src="assets/images/temperaturemap.png" class="img-responsive posy right " style="width:%" alt="Temperature">
+                    </div>
+                    <div class="col-sm-6 ">
+                        <p class="row earthpad">Humidity</p>
+                        <img src="assets/images/humiditymap.png" class="img-responsive posy" style="width:100%" alt="Humidity">
+                    </div>
+                    <div class="col-sm-6 "> 
+                        <p class="row earthpad">Wind Speed</p>
+                        <img src="assets/images/windmap.png" class="img-responsive posy right " style="width:100%" alt="Wind Speed">
+                    </div>
+                    <div class="col-sm-6 "> 
+                        <p class="row earthpad"> Cloudiness</p>
+                        <img src="assets/images/cloudymap.png" class="img-responsive posy" style="width:100%" alt="Cloudiness">
+                    </div>
+                    <div class="col-sm-12">
+                    </div>
+                    <p> </p>
+                    <p><em> * data from over 600 cities                                            <em><p>
+                </div>
+            </div>
+        </div>    
+    </div>
+    
+</div>
+
+<footer class=" footer text-center col-md-12 bg-5">
+    <div><span>  
+        <p></p>
+        
+        <p class="bg-1p">Bootstrap Theme by J Francis Olson: Data Analyst and Visualizer, MBA, CPPPM, CPPP-Agile <a target="_blank" href="https://www.linkedin.com/in/jeff-olson-a9bb391/">Linked In</a></p> 
+        <p><em>Contact me for your project</em></p> 
+
+        <a href="#" class="btn btn-default btn-lg">
+            <span class="glyphicon glyphicon-search"></span> Search
+        </a>
+
+    </span></div>
+</footer>
+
+  <!--<section>
     <h1>Chart 2) Latitude vs. Humidity</h1>
     <hr>
     <article>
     <a target="_blank" href="assets/images/humiditymap.png">
     <img src="assets/images/humiditymap.png" alt="Humidity Map">
     </a>
-    <p><em> Humidity Map</em></p>
+    
     </article>
-    <p>
-    Analysis of the humidity leves by longitude is shown in Chart 2) Humidity vs Latitude seems to be different at the equator than the poles. The distribution of speeds near the equator shows lower dispersion but the distribution increases as you move away from the equator.  Similarly, for windspeed, the closer you are to the equator the lower the humidity.  Certainly, there are more arid regions near the equator worldwide.
-    <p>
-  </section>
+    
+  </section>-->
+
 </body>
 </html>
